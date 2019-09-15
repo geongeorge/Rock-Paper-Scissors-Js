@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock</title>
+
+    <link rel="stylesheet" href="./css/tailwind.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+     <h1 class="title text-3xl text-white font-bold text-center">Rock Paper Scissors</h1>
+    </div>
+
+    <div id="game">
+        <div class="font-bold text-center text-2xl mt-16">
+            <button id="startGame" class="button bg-green-400 hover:bg-teal-400 text-white rounded-full p-2 px-3 shadow focus:outline-none">Start Game</button>
+        </div>
+        <div id="gamePlay" class="font-bold text-center text-2xl mt-16 hidden">
+             <h2 id="choice" class="text-4xl">Your choice</h2>
+             <h2 id="compChoosesParent" class="text-2xl text-gray-600 hidden">Computer chooses <span class="p-1 rounded-full bg-black shadow" id="compChooses"></span></h2>
+             <div id="scores">
+                 Player: <span id="playerSc">0</span>
+                 Computer: <span id="compSc">0</span>
+             </div>
+        </div>
+        <div id="buttongroup" class="text-5xl mr-auto text-center mt-5 hidden">
+            <button id="rock" class="playbutton p-2 bg-white shadow rounded-full hover:bg-red-600 focus:outline-none">✊</button>
+            <button id="paper" class="playbutton p-2 bg-white shadow rounded-full hover:bg-blue-600 focus:outline-none">✋</button>
+            <button id="scissors" class="playbutton p-2 bg-white shadow rounded-full hover:bg-green-600 focus:outline-none">✌</button>
+        </div>
+    </div>
+    <script src="script/game.js"></script>
+</body>
+</html>
